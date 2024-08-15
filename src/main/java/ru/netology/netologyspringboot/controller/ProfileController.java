@@ -10,12 +10,12 @@ import ru.netology.netologyspringboot.configurations.SystemProfile;
 public class ProfileController {
     private SystemProfile profile;
 
-    public ProfileController(SystemProfile profile){
+    public ProfileController(SystemProfile profile) {
         this.profile = profile;
     }
 
     @GetMapping("profile")
-    public String getProfile(){
+    public String getProfile() {
         return profile.getProfile();
     }
 

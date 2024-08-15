@@ -7,15 +7,15 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class JavaConfig {
 
-    @Bean (name = "devProfile")
+    @Bean(name = "devProfile")
     @ConditionalOnProperty(prefix = "netology", name = "profile.dev", havingValue = "true")
-    public SystemProfile devProfile(){
+    public SystemProfile devProfile() {
         return new DevProfile();
     }
 
-    @Bean (name = "ProdProfile")
+    @Bean(name = "ProdProfile")
     @ConditionalOnProperty(prefix = "netology", name = "profile.dev", havingValue = "false")
-    public SystemProfile ProdProfile (){
+    public SystemProfile ProdProfile() {
         return new ProductionProfile();
     }
 }
