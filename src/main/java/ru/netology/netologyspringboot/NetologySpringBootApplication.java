@@ -10,4 +10,6 @@ public class NetologySpringBootApplication {
         SpringApplication.run(NetologySpringBootApplication.class, args);
     }
 
+
+
 }
