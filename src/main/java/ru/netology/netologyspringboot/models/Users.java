@@ -1,14 +1,22 @@
 package ru.netology.netologyspringboot.models;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Getter;
+import org.springframework.validation.annotation.Validated;
 
 import java.util.Objects;
 
 @Getter
 public class Users {
 
+    @Size(min = 3, max=10)
+    @NotBlank
     private final String password;
 
+    @Size(min = 2, max=20)
+    @NotBlank
     private final String login;
 
     public Users(String password, String login) {
