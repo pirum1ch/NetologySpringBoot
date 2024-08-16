@@ -11,11 +11,11 @@ import java.util.Objects;
 @Getter
 public class Users {
 
-    @Size(min = 3, max=10)
+    @Size(min = 3, max = 10)
     @NotBlank
     private final String password;
 
-    @Size(min = 2, max=20)
+    @Size(min = 2, max = 20)
     @NotBlank
     private final String login;
 
