@@ -12,7 +12,7 @@ import java.util.Map;
 @Repository
 public class UserRepository {
 
-    Map<Users, Authorities> roles = new HashMap<>();
+    private Map<Users, Authorities> roles = new HashMap<>();
 
     public UserRepository() {
         roles.put(new Users("111", "Ivan"), Authorities.READ);
